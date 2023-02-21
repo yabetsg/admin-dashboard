@@ -1,0 +1,263 @@
+:root{
+    --main-background: rgb(31,27,45);
+    --grid-background: rgb(39,33,59);
+}
+body{
+    color: white;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-family: 'Gilroy-Light', sans-serif;
+}
+.container{
+    height: 100vh;
+}
+
+.icondiv>ul>li{
+    padding: 20px 20px 20px 10px;
+}
+.settingsdiv>ul>li{
+    padding: 20px 20px 32.5px 10px;
+}
+.icondiv2>ul>li{
+    padding: 20px 20px 20px 0px;
+}
+.icondiv3>ul>li{
+    padding: 20px 20px 20px 0px;
+}
+.settingsdiv2>ul>li{
+    padding: 20px 20px 32.5px 3px;
+}
+.settingsdiv3>ul>li{
+    padding: 20px 20px 32.5px 3px;
+}
+.icondiv2>ul{
+    padding-left:0px;
+}
+.icondiv3>ul{
+    padding-left:0px;
+}
+.settingsdiv2>ul{
+    padding-left: 0px;
+}
+.settingsdiv3>ul{
+    padding-left: 0px;
+}
+
+.settings-support>ul>li{
+    padding: 20px 20px 20px 0px;
+}
+.icondiv{
+    padding-left: 20px;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 100px 120px 345px 245px;
+    background-color: black;
+
+   gap: 15px;
+ 
+}
+.lists{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+.lists2{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 37px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  border-top: 2px solid black;
+
+}
+.lists3{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 37px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+  border-top: 2px solid black;
+
+}
+
+.grids{
+    background-color: var(--grid-background);
+  
+    border: 1px solid black;
+}
+.settings>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.settingsdiv{
+    display: flex;
+ 
+}
+.imgdiv{
+    padding-top: 5px;
+}
+.settings-support{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+
+}
+img{
+    width: 26px;
+    height: 26px;
+    border-color: white;
+    padding: 0;
+    margin: 0;
+    
+}
+nav{
+   
+    height: 100px;
+    grid-column: 2/ 4;
+    grid-row: 1/2;
+    border-bottom-left-radius: 10px;
+}
+.logo{
+   padding: 35px 0px 0px 75px;
+   font-weight: bold;
+   font-size: 1.5rem;
+}
+.settings{
+    font-family: 'Gilroy-Light', sans-serif;
+    display: grid;
+   text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit,50px);
+ 
+}
+.left-side{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 350px;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    justify-content: center;
+
+}
+
+.total{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 120px;
+}
+
+.outlay{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height:345px;
+    border-radius: 15px;
+}
+.income,.transaction,.total-grids{
+    border-radius: 15px;
+}
+
+.income-transaction{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 10px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    height:245px;
+}
+.right-side{
+    grid-column: 3/4;
+    grid-row: 2/5;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .grids{
+    background-color: var(--grid-background);
+  
+    border: 1px solid black;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    width: 887px;
+    height: 100px;
+    flex: 1;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.total-grids{
+    width: 196px;
+    height: 90px;
+}
+.left-side {
+    width: 234px;
+    height: 821px;
+    grid-column: 1/4;
+    grid-row: 1/5;
+}
+nav{
+    display: flex;
+    flex: 1;
+    width: 887px;
+    height: 68px;
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+.outlay{
+    width: 650px;
+    height: 280px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.income-transaction{
+    display: flex;
+    width: 650px;
+    height: 210px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.income{
+    width: 340px;
+    height: 177px;
+}
+.transaction{
+    width: 253px;
+    height: 177px;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    width: 235px;
+    height: 500px;
+  
+    grid-column: 3/4;
+    grid-row: 2/5;
+
+} */
