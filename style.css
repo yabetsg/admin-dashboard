@@ -1,9 +1,15 @@
 :root{
     --main-background: rgb(31,27,45);
     --grid-background: rgb(39,33,59);
+ 
 }
 body{
+    background-color: var(--main-background);
     color: white;
+    margin: 0;
+   
+}
+p{
     margin: 0;
 }
 ul{
@@ -12,9 +18,7 @@ ul{
     font-size: 1.1rem;
     font-family: 'Gilroy-Light', sans-serif;
 }
-.container{
-    height: 100vh;
-}
+
 
 .icondiv>ul>li{
     padding: 20px 20px 20px 10px;
@@ -53,14 +57,20 @@ ul{
 .icondiv{
     padding-left: 20px;
 }
-
+.navbar{
+    display: grid;
+    justify-content: flex-end;
+    padding-right: 40px;
+    grid-template-columns: repeat(3,50px);
+    grid-template-rows: 1fr;
+}
 
 .container{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-columns: 0.4fr 2fr 0.7fr;
     grid-template-rows: 100px 120px 345px 245px;
-    background-color: black;
-
+    height: 100vh;
+    
    gap: 15px;
  
 }
@@ -111,19 +121,19 @@ ul{
 
 }
 img{
-    width: 26px;
-    height: 26px;
+   
     border-color: white;
     padding: 0;
     margin: 0;
     
 }
 nav{
-   
+   display: grid;
     height: 100px;
     grid-column: 2/ 4;
     grid-row: 1/2;
     border-bottom-left-radius: 10px;
+    align-items: center;
 }
 .logo{
    padding: 35px 0px 0px 75px;
@@ -158,35 +168,97 @@ nav{
     height: 120px;
 }
 
-.outlay{
+.grids.outlay{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+
     grid-column: 2/3;
     grid-row: 3/4;
     height:345px;
     border-radius: 15px;
+   
 }
 .income,.transaction,.total-grids{
     border-radius: 15px;
 }
-
+.outlaygraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+input{
+    width: 50px;
+    height: 50px;
+}
+.data{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    font-size: 1.6rem;
+    height: 245px;
+    padding-left: 40px;
+}
+.data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
 .income-transaction{
     display: grid;
     grid-template-columns: 2fr 1fr;
     column-gap: 10px;
     grid-column: 2/3;
     grid-row: 4/5;
-    height:245px;
+    height:245px;   
+}
+.transaction{
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 1fr 1fr;
+
+}
+.title{
+  
+    grid-column: 1/3;
 }
 .right-side{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
     grid-column: 3/4;
     grid-row: 2/5;
     border-radius: 15px;
+    gap: 15px;
+}
+.card,.analytics{
+  
+    background-color: var(--grid-background);
+    border-radius: 15px;
+}
+
+.balance,.savings,.expence{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: repeat(2,1fr);
+   
 }
 
 
+.leftbalance{
+   
+  grid-column: 1/2;
+  grid-row: 1/3;
+  
+}
 
-
-
-
+.graphimg{
+    background-image: url(./graph.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-area: 1/2/3/3;
+    transform: scale(-1,1);
+}
 
 
 
